@@ -1,0 +1,2 @@
+[08-Nov-2018 05:33:11 America/Bogota] PHP Fatal error:  Call to undefined function add_action() in /home/besson/public_html/wp-content/plugins/hello.php on line 60
+[30-Jan-2019 16:45:39 America/Bogota] PHP Fatal error:  Call to undefined function add_action() in /home/besson/public_html/wp-content/plugins/hello.php on line 60
