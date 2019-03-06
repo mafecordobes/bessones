@@ -6,7 +6,7 @@ class Zopim_Linked_View extends Zopim_Base_View
   {
     $this->_messages = array(
       'options-updated'        => __( 'Widget options updated.', 'zopim-live-chat' ),
-      'trial'                  => __( 'Trial Plan with 14 Days Full-features', 'zopim-live-chat' ),
+      'trial'                  => __( 'Trial Plan with 30 Days Full-features', 'zopim-live-chat' ),
       'plan'                   => __( ' Plan', 'zopim-live-chat' ),
       'deactivate'             => __( 'Deactivate', 'zopim-live-chat' ),
       'current-account-label'  => __( 'Currently Activated Account', 'zopim-live-chat' ),
@@ -41,11 +41,14 @@ class Zopim_Linked_View extends Zopim_Base_View
    */
   public function deactivate_plugin()
   {
+    $notices = Zopim_Notices::get_instance();
+
     if (!( isset($_POST['_wpnonce'] ) ) || (! wp_verify_nonce($_POST['_wpnonce'], 'zopim_plugin_deactivate'))) {
-      update_option( Zopim_Options::ZOPIM_OPTION_SALT, 'wronglogin' );
+      $notices->add_notice( 'before_udpate_widget_textarea', 'Invalid CSRF token. Please try re-sending the request.', 'error' );
     } else {
       update_option( Zopim_Options::ZOPIM_OPTION_SALT, '' );
       update_option( Zopim_Options::ZOPIM_OPTION_CODE, 'zopim' );
+      update_option( Zopim_Options::ZENDESK_OPTION_SUBDOMAIN, '');
     }
   }
 
@@ -62,6 +65,17 @@ class Zopim_Linked_View extends Zopim_Base_View
       $accountDetails->package_id .= $this->get_message( 'plan' );
     }
 
-    Zopim_Template::load_template( 'linked-view', array_merge( array( 'messages' => $this->_messages ), (array)$accountDetails ) );
+    Zopim_Template::load_template( 'linked-view', array_merge( array( 'messages' => $this->_messages, 'dashboardLink' => ZOPIM_DASHBOARD_LINK ), (array)$accountDetails ) );
+  }
+
+  /**
+   * Renders the Zendesk Chat form with the dashboard link pointing to the subdomain
+   *
+   * @param string subdomain of the account
+   */
+  public function display_linked_view_using_subdomain( $subdomain )
+  {
+    $url = 'https://' . $subdomain . '.zendesk.com';
+    Zopim_Template::load_template( 'linked-view', array( 'messages' => $this->_messages, 'dashboardLink' => $url, 'package_id' => '' ) );
   }
 }

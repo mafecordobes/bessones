@@ -1,0 +1,12 @@
+.header-transparent #Top_bar .menu > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.5px; }
+
+header#Header #Top_bar {
+  background-color: rgba(0, 0, 0, 0.8); }
+  header#Header #Top_bar.is-sticky {
+    background-color: #000000; }
+
+/*# sourceMappingURL=style.css.map */
