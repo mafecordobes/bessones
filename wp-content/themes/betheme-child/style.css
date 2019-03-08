@@ -6,6 +6,11 @@
   line-height: 30px !important;
   padding: 5px 0 !important; }
 
+#Top_bar .menu li ul li {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 10px !important; }
+
 header#Header #Top_bar {
   background-color: rgba(0, 0, 0, 0.8); }
   header#Header #Top_bar.is-sticky {
@@ -112,6 +117,102 @@ div#ojos-en-todas {
 div#gallery-home {
   padding: 51px !important; }
 
+#Top_bar .search_wrapper input[type="text"]::placeholder {
+  color: white; }
+
+@media only screen and (max-width: 1239px) and (min-width: 960px) {
+  .container, .section_wrapper {
+    max-width: 100% !important; } }
+@media (max-width: 959px) and (min-width: 768px) {
+  .container, .section_wrapper {
+    max-width: 100% !important; }
+
+  #Top_bar a.responsive-menu-toggle {
+    top: 18px !important;
+    right: 0 !important; }
+    #Top_bar a.responsive-menu-toggle i {
+      font-size: 33px !important;
+      line-height: 0 !important;
+      color: #FFFFFF; }
+
+  .top_bar_right {
+    display: none !important; }
+
+  #Top_bar #menu {
+    background: #000000 !important;
+    padding: 16px; }
+    #Top_bar #menu ul li.submenu .menu-toggle {
+      border: none !important; } }
+@media (max-width: 767px) {
+  header#Header, header#Header #Top_bar {
+    background: #000000 !important; }
+
+  .top_bar_right {
+    display: none !important; }
+
+  #Top_bar .logo #logo {
+    margin: 0 !important;
+    padding: 0 !important; }
+  #Top_bar .top_bar_left {
+    margin: 0 !important; }
+  #Top_bar #menu {
+    background: #000000 !important;
+    padding: 16px; }
+    #Top_bar #menu ul li.submenu .menu-toggle {
+      border: none !important; }
+
+  header#Header a.responsive-menu-toggle {
+    top: 14px !important; }
+    header#Header a.responsive-menu-toggle i {
+      font-size: 30px;
+      color: #FFFFFF; }
+
+  body .section_wrapper {
+    max-width: 100% !important; }
+
+  div#tours-destacados .one-fourth {
+    min-height: auto; }
+    div#tours-destacados .one-fourth p {
+      min-height: auto;
+      display: none; }
+
+  div#momentos .section_wrapper.mcb-section-inner {
+    margin: 0;
+    max-width: 100% !important; }
+  div#momentos .one.mcb-wrap {
+    padding-left: 0;
+    padding-right: 0; }
+  div#momentos .image_wrapper {
+    width: 50px;
+    height: 50px; }
+  div#momentos .photo_box .desc {
+    margin-bottom: 0; }
+  div#momentos .one-sixth {
+    width: 50% !important;
+    float: left !important;
+    clear: inherit; }
+
+  div#gallery-home {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  body footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+    body footer .col-footer-20 {
+      width: 100% !important;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #FFFFFF;
+      padding-bottom: 18px; }
+    body footer .col-footer-40 {
+      width: 100% !important; }
+
+  div#tours-destacados .one-fourth {
+    min-height: auto;
+    text-align: center !important; }
+    div#tours-destacados .one-fourth .button {
+      float: none;
+      margin: 14px auto; } }
 footer {
   background: #000000;
   padding: 40px !important; }
@@ -144,5 +245,9 @@ footer {
     footer .container-icon a {
       font-size: 19px;
       padding: 0 3%; }
+  footer img.pet-friendly {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 9px; }
 
 /*# sourceMappingURL=style.css.map */
