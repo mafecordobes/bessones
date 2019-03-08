@@ -1,10 +1,120 @@
-.header-transparent #Top_bar .menu > li > a 
+#Top_bar .menu > li > a 
 	text-transform: uppercase
 	font-weight: 700
 	font-size: 10px
 	letter-spacing: 0.5px
+	line-height: 30px !important
+	padding: 5px 0 !important
 
 header#Header #Top_bar
 	background-color: rgba($black, 0.8)
 	&.is-sticky
 		background-color: $black
+
+#Top_bar #logo, .header-fixed #Top_bar #logo, .header-plain #Top_bar #logo, .header-transparent #Top_bar #logo
+	height: 60px !important
+	line-height: 30px !important
+	padding: 5px 0 !important
+
+.header-classic #Top_bar .top_bar_right 
+	top: 0
+	height: 0
+
+#Top_bar a#search_button 
+	color: $white
+	top: 0 !important
+
+#Top_bar.is-sticky 
+	.menu > li > a, .menu > li > a span
+		line-height: 52px !important
+	.top_bar_right_wrapper
+		top: 25px !important
+
+div#tours-destacados 
+	.one-fourth
+		-webkit-box-shadow: 9px 10px 30px -8px rgba(0,0,0,0.49)
+		-moz-box-shadow: 9px 10px 30px -8px rgba(0,0,0,0.49)
+		box-shadow: 9px 10px 30px -8px rgba(0,0,0,0.49)
+		min-height: 430px
+		p
+			min-height: 85px
+			margin-top: 10px
+		.button
+			float: right 
+			border: 1px solid $red
+			border-radius: 25px
+			line-height: 11px
+			color: $red
+			font-weight: 600
+			text-transform: uppercase
+			font-size: 10px
+			margin-right: 25px
+			&:hover
+				background: $red
+				color: $white
+		h4 
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 19px
+			margin-bottom: 0
+			span
+				font-size: 14px
+				font-weight: 500
+				margin-bottom: 10px
+				text-transform: none
+
+div#momentos
+	background-size: cover !important
+	.section_wrapper.mcb-section-inner
+		background: rgba($white, 0.6)
+		margin: 0 auto
+		width: 100%
+		max-width: 100%
+		padding: 2% 0
+	.one.mcb-wrap
+		padding-left: 10%
+		padding-right: 10%
+		.one-third
+			h4 
+				text-align: center
+				font-weight: 500
+				text-transform: uppercase
+			.list_idea
+				li a
+					color: $black !important
+	h2.title 
+		color: $black
+		padding-top: 30px
+	.image_frame .image_wrapper .mask, .edd_download_image:after
+		box-shadow: none !important
+
+	.image_wrapper
+		width: 70px
+		height: 70px
+		text-align: center
+		margin: 0 auto
+		
+	.image_frame:hover 
+		.image_wrapper 
+			.mask:after
+				background: transparent
+			img 
+				top: -2px !important
+	.photo_box .desc
+		margin-bottom: 15px
+		text-transform: uppercase
+		font-weight: 600
+		color: $black
+
+div#ojos-en-todas
+	text-align: center
+	.one
+		margin-bottom: 0
+.text-center
+	text-align: center !important
+
+#gallery-home .fancy_heading .title
+	color: $red
+
+div#gallery-home
+	padding: 51px !important

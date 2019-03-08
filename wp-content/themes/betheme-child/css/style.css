@@ -9,4 +9,7 @@ header#Header #Top_bar {
   header#Header #Top_bar.is-sticky {
     background-color: #000000; }
 
+#Top_bar #logo, .header-fixed #Top_bar #logo, .header-plain #Top_bar #logo, .header-transparent #Top_bar #logo {
+  padding: 5px 0; }
+
 /*# sourceMappingURL=style.css.map */
