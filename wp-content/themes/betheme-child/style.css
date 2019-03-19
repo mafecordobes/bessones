@@ -250,4 +250,13 @@ footer {
     vertical-align: middle;
     margin-right: 9px; }
 
+.fbx-light .fbx-close, .fbx-light .fbx-fullscreen-toggle, .fbx-light .fbx-inner, .fbx-light .fbx-loader, .fbx-light .fbx-next, .fbx-light .fbx-pause, .fbx-light .fbx-play, .fbx-light .fbx-prev, .fbx-light .fbx-social-toggle, .fbx-light.fbx-inset-buttons .fbx-next:before, .fbx-light.fbx-inset-buttons .fbx-prev:before {
+  background-color: #000000 !important; }
+
+.fbx-light .fbx-inner, .fbx-light.fbx-inset-buttons .fbx-next:before, .fbx-light.fbx-inset-buttons .fbx-prev:before, .fbx-light.fbx-modal, .fbx-modal.fbx-light.fbx-phone .fbx-close:hover, .fbx-modal.fbx-light.fbx-phone .fbx-fullscreen-toggle:hover, .fbx-modal.fbx-light.fbx-phone .fbx-next:hover, .fbx-modal.fbx-light.fbx-phone .fbx-pause:hover, .fbx-modal.fbx-light.fbx-phone .fbx-play:hover, .fbx-modal.fbx-light.fbx-phone .fbx-prev:hover, .fbx-modal.fbx-light.fbx-phone .fbx-social-toggle:hover, .fbx-rounded.fbx-light .fbx-close, .fbx-rounded.fbx-light .fbx-fullscreen-toggle, .fbx-rounded.fbx-light .fbx-pause, .fbx-rounded.fbx-light .fbx-play, .fbx-rounded.fbx-light .fbx-social-toggle {
+  border-color: #000000 !important; }
+
+.fbx-light .fbx-close, .fbx-light .fbx-close:before, .fbx-light .fbx-error-msg, .fbx-light .fbx-fullscreen-toggle, .fbx-light .fbx-fullscreen-toggle:before, .fbx-light .fbx-loader, .fbx-light .fbx-loader:before, .fbx-light .fbx-next, .fbx-light .fbx-next:before, .fbx-light .fbx-pause, .fbx-light .fbx-pause:before, .fbx-light .fbx-play, .fbx-light .fbx-play:before, .fbx-light .fbx-prev, .fbx-light .fbx-prev:before, .fbx-light .fbx-social-toggle, .fbx-light .fbx-social-toggle:before, .fbx-light.fbx-inset-buttons .fbx-next:before, .fbx-light.fbx-inset-buttons .fbx-prev:before, .fbx-metro.fbx-light .fbx-count, .fbx-metro.fbx-light .fbx-credit a {
+  color: #FFFFFF !important; }
+
 /*# sourceMappingURL=style.css.map */

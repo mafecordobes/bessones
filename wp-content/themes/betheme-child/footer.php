@@ -19,12 +19,12 @@
 			<div class="col-footer-20">
 				<h5>Información de contacto</h5>
 				<p><span class="icon-location-line"></span>Calle 138 # 5-11 Sierra Grata <br/>Bello horizonte</p>
-				<p><a href="tel:+5754218123"><span class="icon-call"></span>5-4218 123</a></p>
+				<p><a href="tel:+573004845438"><span class="icon-call"></span>300 4845438</a></p>
 				<p><a href="whatsapp://send?abid=+573172414460"><span class="icon-mobile"></span>317 241 4460</a></p>
 			</div>
 			<div class="col-footer-40 text-center">
 				<div>
-					<img src="<?php echo home_url(); ?>/wp-content/uploads/2019/03/dc30d609b3c51586675d70adac803d02.jpg" class="ojos-footer">
+					<img src="<?php echo home_url(); ?>/wp-content/uploads/2015/03/OJOS.png" class="ojos-footer">
 				</div>
 			</div>
 		</div>
