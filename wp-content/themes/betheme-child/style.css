@@ -212,7 +212,10 @@ div#gallery-home {
     text-align: center !important; }
     div#tours-destacados .one-fourth .button {
       float: none;
-      margin: 14px auto; } }
+      margin: 14px auto; }
+
+  .page-template-default div[role="form"] {
+    padding: 20px; } }
 footer {
   background: #000000;
   padding: 40px !important; }
